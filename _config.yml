@@ -1,0 +1,4 @@
+show_downloads: false
+repository: RuRo/seminar
+kramdown:
+    hard_wrap: true
