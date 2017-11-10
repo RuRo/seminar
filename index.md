@@ -51,7 +51,7 @@ Disclamer
 Задачи с contest.solutions (2 семестр).
 ---------------------------------------
 
->   Under Construction.
->   ![](tools.png)
->   Coming "Soon" (tm).
-
+> ## Under Construction.
+> ![](tools.png)
+> Coming "Soon" (tm).
+{: style="text-align: center"}
