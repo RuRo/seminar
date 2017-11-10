@@ -55,3 +55,6 @@ Disclamer
 > ![](tools.png)
 > Coming "Soon" (tm).
 {: style="text-align: center"}
+{::comment}
+vim: wrap linebreak
+{:/comment}
