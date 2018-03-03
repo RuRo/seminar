@@ -32,8 +32,8 @@ Disclamer
 -------------------------------------------------------------
 
 | Номера заданий | Дата задания | Дата  сдачи |
-|:--------------:|:------------:|:-----------:| {% for file in site.pages %}{% if file.path contains 'homework/' %}
-| [{{ file.path | replace: 'homework/','' | replace: '.md','' }}]({{ file.path | replace: '.md','' }}) | {{ file.from }} | {{ file.until }} |{% endif %}{% endfor %}
+|:--------------:|:------------:|:-----------:| {% for file in site.pages %}{% if file.path contains 'homework1/' %}
+| [{{ file.path | replace: 'homework1/','' | replace: '.md','' }}]({{ file.path | replace: '.md','' }}) | {{ file.from }} | {{ file.until }} |{% endif %}{% endfor %}
 
 Задачи с unicorn.ejudge (3 семестр).
 ------------------------------------
