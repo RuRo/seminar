@@ -6,7 +6,7 @@ title: ''
 ----------------
 
 Этот сайт о практических занятиях 05 группы (2016 года набора) по языку `С`, ассемблеру `nasm` и курсу операционных систем.
-А именно о подгруппе [Смирнова Александра Владимировича](https://istina.msu.ru/profile/Sander/)(1-2 семестр) и [Герасимова Сергея Валерьевича](https://istina.msu.ru/profile/sergun/)(3+ семестр).
+А именно о подгруппе [Смирнова Александра Владимировича](https://istina.msu.ru/profile/Sander/)(1-2 семестр) и [Герасимова Сергея Валерьевича](https://istina.msu.ru/profile/sergun/)(3-4 семестр).
 Помимо задач с семинаров, здесь можно найти задачи из тестовых систем [unicorn.ejudge](https://unicorn.ejudge.ru) и [contest.solutions](http://contest.solutions) (aka [earth.ispras](http://earth.ispras.ru)).
 Автор не гарантирует корректность содержания сайта, но честно обещает стараться её поддерживать.
 
@@ -17,61 +17,13 @@ Disclamer
 Содержимое предназначено только для студентов проходящих обучение на системах unicorn.ejudge и contest.solutions.
 Если вы не студент, однако желаете воспользоваться данными материалами, вам необходимо получить специальное разрешение [Чернова Александра Владимировича](https://istina.msu.ru/profile/chernovav/).
 
-Задания с семинаров по курсу систем программирования (4 семестр).
------------------------------------------------------------------
+Table of Contents
+-----------------
 
-| Номера заданий | Дата задания | Дата  сдачи |
-|:--------------:|:------------:|:-----------:| {% for file in site.pages %}{% if file.path contains 'homework2/' %}
-| [{{ file.path | replace: 'homework2/','' | replace: '.md','' }}]({{ file.path | replace: '.md','' }}) | {{ file.from }} | {{ file.until }} |{% endif %}{% endfor %}
+{% for file in site.pages %}{% if file.path contains '+' %}
+ - [{{ file.title }}]({{ file.path | replace: '.md','' }}) {% endif %}{% endfor %}
 
-Задачи с unicorn.ejudge (4 семестр).
-------------------------------------
 
-В данном разделе находятся тексты задач из контестов [ejudge](https://unicorn.ejudge.ru).
-Условия задач загружаются на сайт в полуавтоматическом режиме, а значит вероятность глюков возрастает.
-Если вы заметили ошибки в этом разделе, пожалуйста немедленно напишите об этом на [ruro.ruro@ya.ru](mailto:ruro.ruro@ya.ru).
-
-| Номер задачи | Имя задачи |
-|:------------:|:---------- | {% for file in site.pages %}{% if file.path contains 'ejudge2/' %}
-| [{{ file.path | replace: 'ejudge2/','' | replace: '.md','' }}]({{ file.path | replace: '.md','' }}) | {{ file.title | replace: 'Задача ','' }} |{% endif %}{% endfor %}
-
-Задания с семинаров по курсу операционных систем (3 семестр).
--------------------------------------------------------------
-
-| Номера заданий | Дата задания | Дата  сдачи |
-|:--------------:|:------------:|:-----------:| {% for file in site.pages %}{% if file.path contains 'homework1/' %}
-| [{{ file.path | replace: 'homework1/','' | replace: '.md','' }}]({{ file.path | replace: '.md','' }}) | {{ file.from }} | {{ file.until }} |{% endif %}{% endfor %}
-
-Задачи с unicorn.ejudge (3 семестр).
-------------------------------------
-
-В данном разделе находятся тексты задач из контестов [ejudge](https://unicorn.ejudge.ru).
-Условия задач загружаются на сайт в полуавтоматическом режиме, а значит вероятность глюков возрастает.
-Если вы заметили ошибки в этом разделе, пожалуйста немедленно напишите об этом на [ruro.ruro@ya.ru](mailto:ruro.ruro@ya.ru).
-
-| Номер задачи | Имя задачи |
-|:------------:|:---------- | {% for file in site.pages %}{% if file.path contains 'ejudge1/' %}
-| [{{ file.path | replace: 'ejudge1/','' | replace: '.md','' }}]({{ file.path | replace: '.md','' }}) | {{ file.title | replace: 'Задача ','' }} |{% endif %}{% endfor %}
-
-Задачи с contest.solutions (1 семестр).
----------------------------------------
-
-В данном разделе находятся тексты задач из контестов [contest.solutions](http://contest.solutions).
-К сожалению, на момент скачивания условий, автор не знал, что он будет делать сайт с ними.
-В результате здесь присутствуют только условия тех задач, которые решил автор (и то не всех).
-Условия задач были обработаны в полуавтоматическом режиме, а значит вероятность глюков возрастает.
-Если вы заметили ошибки в этом разделе, пожалуйста немедленно напишите об этом на [ruro.ruro@ya.ru](mailto:ruro.ruro@ya.ru).
-
-| Номер задачи | Имя задачи |
-|:------------:|:---------- | {% for file in site.pages %}{% if file.path contains 'contest1/' %}
-| [{{ file.path | replace: 'contest1/','' | replace: '.md','' }}]({{ file.path | replace: '.md','' }}) | {{ file.title | replace: 'Задача ','' }} |{% endif %}{% endfor %}
-
-Задачи с contest.solutions (2 семестр).
----------------------------------------
-
-> ## Under Construction.
-> ![](tools.png)
-> Coming "Soon" (tm).
 {: style="text-align: center"}
 {::comment}
 vim: wrap linebreak
